@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Nav() {
   const [selected, setSelected] = useState("about");
   return (
-    <nav className=" h-screen flex flex-col items-start justify-start p-10 space-y-4 text-white">
+    <nav className="  w-[10%] flex lg:flex-col gap-4">
       <Link
         onClick={() => {
           setSelected("about");
@@ -14,7 +14,7 @@ export default function Nav() {
           selected === "about" && "text-white"
         }`}
       >
-        About
+        about
       </Link>
       <Link
         onClick={() => {
@@ -25,7 +25,7 @@ export default function Nav() {
           selected === "work" && "text-white"
         }`}
       >
-        Work
+        work
       </Link>
     </nav>
   );

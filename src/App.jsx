@@ -7,19 +7,22 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-[#18181b] w-full h-[100vh] flex">
-      {/* Left Side Navigation */}
-      <div className="w-1/8">
+    <div className="bg-[#18181b] w-full min-h-screen items-stretch flex flex-col lg:flex-row m-0">
+      <div className="p-5 lg:p-10 ">
         <Nav />
       </div>
 
-      {/* Right Side Content */}
-      <div className="w-3/4 p-8">
+      <div className="w-full h-[1px] lg:h-full lg:w-[1px] bg-gradient-to-r lg:bg-gradient-to-b from-neutral-800 to-neutral-950"></div>
+
+
+
+      <div className=" min-h-screen w-full overflow-auto">
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/work" element={<Work />} />
         </Routes>
       </div>
+
     </div>
   );
 }
