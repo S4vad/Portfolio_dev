@@ -3,6 +3,8 @@ import Main from "./pages/Main";
 import Work from "./pages/Work";
 import Nav from "./pages/Nav"; 
 import Blog from "./pages/Blog"
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2"
 
 import "./App.css";
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/work" element={<Work />} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="/blog/1" element={<Blog1/>} />
+          <Route path="/blog/2" element={<Blog2/>} />
         </Routes>
       </div>
 

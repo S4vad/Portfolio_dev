@@ -100,7 +100,7 @@ export default function ContactForm() {
       </button>
 
       {showForm && (
-        <div className="absolute bg-[#121212] text-white p-4 border border-gray-600 rounded-lg shadow-lg w-63 mt-3">
+        <div className="absolute bg-[#121212] text-white p-3 md:p-4 border border-gray-600 rounded-lg shadow-l  w-[192px] md:w-[250.3px]  mt-3">
           <h2 className="text-md font-bold mb-3">Let's Connect</h2>
           <form onSubmit={handleSubmit} className="space-y-2">
             <input
@@ -137,7 +137,7 @@ export default function ContactForm() {
               type="submit"
               className="bg-neutral-600 text-white px-4 py-1 rounded-lg hover:bg-neutral-500 w-full"
             >
-              Submit
+              Connect
             </button>
           </form>
         </div>
