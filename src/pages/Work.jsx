@@ -8,7 +8,9 @@ export default function Work() {
         {data.map((item, index) => (
           <div key={index} className="flex flex-col gap-4 leading-relaxed">
             <div className="flex flex-col gap-2 md:w-3/4">
-              <h3 className="text-[15px] text-white">{item.title}</h3>
+              <h3 className="text-[15px] dark:text-[#212529] text-white">
+                {item.title}
+              </h3>
               <p className="text-[12px] -mt-2 text-neutral-400">
                 {item.description}
               </p>
@@ -16,7 +18,7 @@ export default function Work() {
                 {/* GitHub Link */}
                 <div className="flex gap-2 items-center">
                   <a
-                    className="border-b text-[#82b817] hover:text-[#a3d42a] inline-flex items-center gap-1 border-neutral-800 border-dashed transition-all"
+                    className="border-b text-[#82b817] hover:text-[#a3d42a] inline-flex items-center gap-1 dark:border-[#E0E0E0] border-neutral-800 border-dashed transition-all"
                     href={item.gitLink}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -40,7 +42,7 @@ export default function Work() {
                 {item.webLink && (
                   <div className="items-center gap-2 flex text-[#82b817] hover:text-[#a3d42a]">
                     <a
-                      className="border-b inline-flex items-center gap-1 border-neutral-800 border-dashed transition-all"
+                      className="border-b inline-flex items-center gap-1 border-neutral-800 border-dashed transition-all dark:border-[#E0E0E0]"
                       href={item.webLink}
                       rel="noopener noreferrer"
                       target="_blank"
