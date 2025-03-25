@@ -63,7 +63,7 @@ export default function ContactForm() {
         onClick={() => setShowForm(!showForm)}
         className="items-center hover:scale-105 px-3 py-1 flex border border-gray-500 hover:border-neutral-500 transition-all gap-2 rounded-3xl "
       >
-        <div className="text-white dark:text-[#212529]">
+        <div className="dark:text-white text-[#212529]">
        
           <svg
             fill="currentColor"
@@ -100,14 +100,14 @@ export default function ContactForm() {
           </svg>
         </div>
 
-        <span className="text-[#FFFFFF] text-[12px] dark:text-[#212529]">
+        <span className="dark:text-[#FFFFFF] text-[12px] text-[#212529]">
           Let's Connect
         </span>
       </button>
 
       {showForm && (
-        <div className="absolute bg-[#121212] dark:bg-white text-white p-3 md:p-4 border border-gray-600 rounded-lg shadow-l  w-[192px] md:w-[250.3px]  mt-3">
-          <h2 className="text-md font-bold mb-3 dark:text-[#212529]">Let's Connect</h2>
+        <div className="absolute dark:bg-[#121212] bg-white text-white p-3 md:p-4 border border-gray-600 rounded-lg shadow-l  w-[192px] md:w-[250.3px]  mt-3">
+          <h2 className="text-md font-bold mb-3 dark:text-[#FFFFFF] text-[#212529]">Let's Connect</h2>
           <form onSubmit={handleSubmit} className="space-y-2">
             <input
               type="text"
@@ -115,7 +115,7 @@ export default function ContactForm() {
               placeholder="Your Name"
               value={formData.username}
               onChange={handleChange}
-              className="w-full dark:text-[#121212] text-gray-200 px-2 py-1 bg-transparent border border-gray-500 rounded"
+              className="w-full text-[#121212] dark:text-gray-200 px-2 py-1 bg-transparent border border-gray-500 rounded"
               required
             />
 
@@ -125,7 +125,7 @@ export default function ContactForm() {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-2 py-1 dark:text-[#121212] text-gray-200 bg-transparent border border-gray-500 rounded"
+              className="w-full px-2 py-1 text-[#121212] dark:text-gray-200 bg-transparent border border-gray-500 rounded"
               required
             />
 
@@ -135,13 +135,13 @@ export default function ContactForm() {
               placeholder="Your Phone Number"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-2 py-1 dark:text-[#121212] text-gray-200  bg-transparent border border-gray-500 rounded"
+              className="w-full px-2 py-1 text-[#121212] dark:text-gray-200  bg-transparent border border-gray-500 rounded"
               required
             />
 
             <button
               type="submit"
-              className="bg-neutral-600 dark:bg-gray-200 dark:text-[#121212] text-white px-4 py-1 rounded-lg hover:bg-neutral-500 w-full"
+              className="dark:bg-neutral-600 bg-gray-200 text-[#121212] dark:text-white px-4 py-1 rounded-lg hover:bg-neutral-500 w-full"
             >
               Connect
             </button>

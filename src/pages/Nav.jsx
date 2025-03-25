@@ -11,8 +11,8 @@ export default function Nav() {
           setSelected("about");
         }}
         to="/"
-        className={`hover:text-gray-200 text-gray-400 dark:text-gray-950 dark:hover:text-gray-600  ${
-          selected === "about" && "text-white dark:!text-gray-400"
+        className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
+          selected === "work" && "dark:!text-white text-gray-400"
         }`}
       >
         about
@@ -22,8 +22,8 @@ export default function Nav() {
           setSelected("work");
         }}
         to="/work"
-        className={`hover:text-gray-200 text-gray-400 dark:text-gray-950 dark:hover:text-gray-600  ${
-          selected === "work" && "text-white dark:!text-gray-400"
+        className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
+          selected === "work" && "dark:!text-white text-gray-400"
         }`}
       >
         work
@@ -33,8 +33,8 @@ export default function Nav() {
           setSelected("blog");
         }}
         to="/blog"
-        className={`hover:text-gray-200 text-gray-400 dark:text-gray-950 dark:hover:text-gray-600  ${
-          selected === "blog" && "text-white dark:!text-gray-400"
+        className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
+          selected === "blog" && "dark:!text-white text-gray-400"
         }`}
       >
         blog

@@ -8,7 +8,7 @@ export default function Blog() {
         <div class="flex flex-col gap-4">
           <div class="flex hover:opacity-100 text-md flex-col md:flex-row md:items-center justify-between gap-2">
             <Link
-              class="text-[#82b817] hover:text-[#a3d42a]  border-b inline-flex items-center gap-1 border-neutral-800 dark:border-[#E0E0E0] border-dashed  transition-all undefined"
+              class="text-[#82b817] hover:text-[#a3d42a]  border-b inline-flex items-center gap-1 dark:border-neutral-800 border-[#E0E0E0] border-dashed  transition-all undefined"
               to="/blog/1"
             >
               The Journey of Building Bizfluence
@@ -18,7 +18,7 @@ export default function Blog() {
 
           <div class="flex hover:opacity-100 text-md flex-col md:flex-row md:items-center justify-between gap-2">
             <Link
-              class="text-[#82b817] hover:text-[#a3d42a]  border-b inline-flex items-center gap-1 border-neutral-800 dark:border-[#E0E0E0]  border-dashed  transition-all undefined"
+              class="text-[#82b817] hover:text-[#a3d42a]  border-b inline-flex items-center gap-1 dark:border-neutral-800 border-[#E0E0E0]  border-dashed  transition-all undefined"
               to="/blog/2"
             >
               The Habit of Reading: A Journey of Growth and Discovery

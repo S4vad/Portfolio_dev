@@ -11,7 +11,7 @@ export default function Main() {
       <div className="flex flex-col gap-2 w-full min-[1800px]:w-[65%]">
         <div className="flex justify-between  items-center">
           <div>
-            <h1 className="text-white text-[22px] dark:text-[#212529] font-medium">
+            <h1 className="dark:text-white text-[22px] text-[#212529] font-medium">
               Muhammed Savad K
             </h1>
           </div>
@@ -21,7 +21,7 @@ export default function Main() {
               href="https://drive.google.com/file/d/1fBnkHl5Dgb1iwFc0f8CCoRurJBNVRDw3/view?usp=drive_link"
               className="items-center hover:scale-105 px-3 py-1 flex border border-gray-500  
                hover:border-neutral-500 transition-all gap-2 rounded-3xl 
-               text-[#FFFFFF] dark:text-[#212529]" // Apply dark mode text color here
+               dark:text-[#FFFFFF] text-[#212529]" 
             >
               <div>
                 <svg
@@ -41,12 +41,12 @@ export default function Main() {
           </div>
         </div>
         <div className="flex flex-col text-justify  text-[14px] leading-loose tracking-wide gap-5">
-          <p className="text-neutral-400 dark:text-gray-500 ">
+          <p className="dark:text-neutral-400 text-gray-500 ">
             I'm a developer based in India. My interests lie around GenAI, web
             development, and solving actual problems using code. I've built
             various projects to improve efficiency and productivity.
           </p>
-          <p className="text-neutral-400 dark:text-gray-500">
+          <p className="dark:text-neutral-400 text-gray-500">
             I wrote my first line of code in 2022. During my college years, I
             gained experience through internships, freelance projects, and by
             attending and organizing developer events. In 2022, I graduated with

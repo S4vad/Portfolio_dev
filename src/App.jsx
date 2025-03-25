@@ -10,15 +10,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-[#18181b] dark:bg-[#F8F9FA] w-full min-h-screen items-stretch flex flex-col md:flex-row m-0">
+    <div className="dark:bg-[#18181b] bg-[#F8F9FA] w-full min-h-screen items-stretch flex flex-col md:flex-row m-0">
       <div className="p-5 md:p-10 ">
         <Nav />
       </div>
 
       <div
         className="w-full h-[1px] md:h-full md:w-[1px] 
-         bg-gradient-to-r md:bg-gradient-to-b from-neutral-800 to-neutral-950 
-       dark:from-neutral-200 dark:to-neutral-400"
+         bg-gradient-to-r md:bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-950 
+       from-neutral-200 to-neutral-400"
       ></div>
 
       <div className="min-h-screen w-full overflow-auto ">
