@@ -7,6 +7,13 @@ const platformInfo = [
     webLink: "https://your-website-link.com",
   },
   {
+    title: "AI Chatbot",
+    description:
+      "A voice and text-based chatbot using Mistral AI (7B) via Hugging Face API, built with React, Node.js, and MongoDB, featuring dark mode and responsive UI.",
+    gitLink: "https://github.com/S4vad/Voice-and-Text-Chatbot",
+    webLink: "https://chatbot-neon-three.vercel.app",
+  },
+  {
     title: "COZA store",
     description:
       "A full-stack e-commerce platform for clothing and accessories with ML features like password strength checker, sentiment analysis, and product recommendations.",
