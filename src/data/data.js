@@ -20,6 +20,13 @@ const platformInfo = [
     gitLink: "https://github.com/your-repo-link",
     webLink: "https://your-website-link.com",
   },
+  {
+    title: "React Food Order App",
+    description:
+      "A food ordering web application built using React and Redux for state management, providing a seamless user experience.",
+    gitLink: "https://github.com/S4vad/React_Food_order_app",
+    webLink: "https://react-food-order-app-duip.vercel.app/",
+  },
   
   {
     title: "Intruder Detection System",
@@ -44,3 +51,5 @@ const platformInfo = [
 ];
 
 export default platformInfo;
+
+
