@@ -5,6 +5,7 @@ import Nav from "./pages/Nav";
 import Blog from "./pages/Blog";
 import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
 
 import "./App.css";
 
@@ -28,6 +29,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/1" element={<Blog1 />} />
           <Route path="/blog/2" element={<Blog2 />} />
+          <Route path="/blog/3" element={<Blog3 />} />
+
         </Routes>
       </div>
     </div>

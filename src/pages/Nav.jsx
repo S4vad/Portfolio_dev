@@ -12,7 +12,7 @@ export default function Nav() {
         }}
         to="/"
         className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
-          selected === "work" && "dark:!text-white text-gray-400"
+          selected === "about" && "dark:!text-white !text-gray-500"
         }`}
       >
         about
@@ -23,7 +23,7 @@ export default function Nav() {
         }}
         to="/work"
         className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
-          selected === "work" && "dark:!text-white text-gray-400"
+          selected === "work" && "dark:!text-white !text-gray-500"
         }`}
       >
         work
@@ -34,7 +34,7 @@ export default function Nav() {
         }}
         to="/blog"
         className={`dark:hover:text-gray-200 dark:text-gray-400 text-gray-950 hover:text-gray-600  ${
-          selected === "blog" && "dark:!text-white text-gray-400"
+          selected === "blog" && "dark:!text-white !text-gray-500"
         }`}
       >
         blog

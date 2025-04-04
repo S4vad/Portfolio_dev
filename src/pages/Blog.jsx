@@ -8,6 +8,15 @@ export default function Blog() {
         <div class="flex flex-col gap-4">
           <div class="flex hover:opacity-100 text-md flex-col md:flex-row md:items-center justify-between gap-2">
             <Link
+              class="text-[#82b817] hover:text-[#a3d42a] border-b inline-flex items-center gap-1 dark:border-neutral-800 border-[#E0E0E0] border-dashed transition-all"
+              to="/blog/3"
+            >
+              Is This the End of Software Tutorial Videos?
+            </Link>
+            <p class="text-neutral-500 whitespace-nowrap">4 APR, 2025</p>
+          </div>
+          <div class="flex hover:opacity-100 text-md flex-col md:flex-row md:items-center justify-between gap-2">
+            <Link
               class="text-[#82b817] hover:text-[#a3d42a]  border-b inline-flex items-center gap-1 dark:border-neutral-800 border-[#E0E0E0] border-dashed  transition-all undefined"
               to="/blog/1"
             >
@@ -23,9 +32,8 @@ export default function Blog() {
             >
               The Habit of Reading: A Journey of Growth and Discovery
             </Link>
-            <p class="text-neutral-500">8 FEB, 2024</p>
+            <p class="text-neutral-500 whitespace-nowrap">8 FEB, 2024</p>
           </div>
-
         </div>
       </div>
     </div>
