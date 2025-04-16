@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 import { toast } from "sonner";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ContactForm() {
   const [showForm, setShowForm] = useState(false);
@@ -9,6 +10,30 @@ export default function ContactForm() {
     email: "",
     phone: "",
   });
+
+  const formRef = useRef();
+  const buttonRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        formRef.current &&
+        !formRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setShowForm(false);
+      }
+    };
+
+    if (showForm) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showForm]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -58,17 +83,18 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="relative ">
       <button
         onClick={() => setShowForm(!showForm)}
+        aria-expanded={showForm}
+        ref={buttonRef}
         className="items-center hover:scale-105 px-3 py-1 flex border border-gray-500 hover:border-neutral-500 transition-all gap-2 rounded-3xl "
       >
         <div className="dark:text-white text-[#212529]">
-       
           <svg
             fill="currentColor"
-            height="15"
-            width="15"
+            height="11"
+            width="11"
             version="1.1"
             id="XMLID_127_"
             xmlns="http://www.w3.org/2000/svg"
@@ -100,54 +126,69 @@ export default function ContactForm() {
           </svg>
         </div>
 
-        <span className="dark:text-[#FFFFFF] text-[12px] text-[#212529]">
-          Let's Connect
+        <span className="dark:text-[#FFFFFF] text-[11px] text-[#212529] hidden sm:block">
+          Get in Touch
+        </span>
+        <span className="dark:text-[#FFFFFF] text-[11px] text-[#212529] block sm:hidden">
+          connect
         </span>
       </button>
 
-      {showForm && (
-        <div className="absolute dark:bg-[#121212] bg-white text-white p-3 md:p-4 border border-gray-600 rounded-lg shadow-l  w-[192px] md:w-[250.3px]  mt-3">
-          <h2 className="text-md font-bold mb-3 dark:text-[#FFFFFF] text-[#212529]">Let's Connect</h2>
-          <form onSubmit={handleSubmit} className="space-y-2">
-            <input
-              type="text"
-              name="username"
-              placeholder="Your Name"
-              value={formData.username}
-              onChange={handleChange}
-              className="w-full text-[#121212] dark:text-gray-200 px-2 py-1 bg-transparent border border-gray-500 rounded"
-              required
-            />
+      <AnimatePresence>
+        {showForm && (
+          <motion.div
+            ref={formRef}
+            aria-hidden={!showForm}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="absolute dark:bg-[#121212] right-0 z-10 bg-white text-white p-3 md:p-4 border border-gray-600 rounded-lg shadow-lg w-[192px] md:w-[250.3px] mt-3"
+          >
+            <h2 className="text-md font-bold mb-3 dark:text-[#FFFFFF] text-[#212529] ">
+              Say Hello 👋
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-2">
+              <input
+                type="text"
+                name="username"
+                placeholder="Your Name"
+                value={formData.username}
+                onChange={handleChange}
+                className="w-full text-[#121212] dark:text-gray-200 px-2 py-1 bg-transparent border border-gray-500 rounded"
+                required
+              />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-2 py-1 text-[#121212] dark:text-gray-200 bg-transparent border border-gray-500 rounded"
-              required
-            />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-2 py-1 text-[#121212] dark:text-gray-200 bg-transparent border border-gray-500 rounded"
+                required
+              />
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Your Phone Number"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full px-2 py-1 text-[#121212] dark:text-gray-200  bg-transparent border border-gray-500 rounded"
-              required
-            />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                className="w-full px-2 py-1 text-[#121212] dark:text-gray-200  bg-transparent border border-gray-500 rounded"
+                required
+              />
 
-            <button
-              type="submit"
-              className="dark:bg-neutral-600 bg-gray-200 text-[#121212] dark:text-white px-4 py-1 rounded-lg hover:bg-neutral-500 w-full"
-            >
-              Connect
-            </button>
-          </form>
-        </div>
-      )}
+              <button
+                type="submit"
+                className="dark:bg-neutral-600 bg-gray-300 hover:bg-gray-400 text-[#121212] dark:text-white px-4 py-1 rounded-lg dark:hover:bg-neutral-700 w-full"
+              >
+                Connect
+              </button>
+            </form>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

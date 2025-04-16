@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ModeToggle } from "@/darkmode/ModeToggle";
+import { motion } from "framer-motion";
 
 export default function Nav() {
   const [selected, setSelected] = useState("about");
   return (
-    <nav className="  w-[10%] flex items-center md:flex-col gap-4">
+    <motion.nav
+    initial={{ x: -100, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+    className="w-[10%] flex  md:flex-col gap-4"
+  >
       <Link
         onClick={() => {
           setSelected("about");
@@ -42,6 +48,6 @@ export default function Nav() {
       <div className="md:relative md:right-auto absolute right-6">
         <ModeToggle />
       </div>
-    </nav>
+    </motion.nav>
   );
 }
