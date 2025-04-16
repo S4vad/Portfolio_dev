@@ -14,7 +14,7 @@ export default function Main() {
             <div>
               <img
                 className="rounded-full w-[80px] h-[80px]  md:w-[90px] md:h-[90px] object-cover"
-                src="../../public/crop profile highmb.png"
+                src="/crop profile highmb.png"
                 alt="Profile"
               />
             </div>
