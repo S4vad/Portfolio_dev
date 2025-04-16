@@ -52,7 +52,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="mt-0.5 sm:mt-1.5 ">
+          <div className="mt-1.5 ">
             <ContactForm />
           </div>
         </div>

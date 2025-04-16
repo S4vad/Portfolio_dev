@@ -88,7 +88,7 @@ export default function ContactForm() {
         onClick={() => setShowForm(!showForm)}
         aria-expanded={showForm}
         ref={buttonRef}
-        className="items-center hover:scale-105 px-3 py-1 flex border border-gray-500 hover:border-neutral-500 transition-all gap-2 rounded-3xl "
+        className="items-center hover:scale-105 px-3 py-1 flex border border-gray-500 hover:border-neutral-500 transition-all gap-2 rounded-3xl animate-bounce sm:animate-none"
       >
         <div className="dark:text-white text-[#212529]">
           <svg
@@ -129,9 +129,7 @@ export default function ContactForm() {
         <span className="dark:text-[#FFFFFF] text-[11px] text-[#212529] hidden sm:block">
           Get in Touch
         </span>
-        <span className="dark:text-[#FFFFFF] text-[11px] text-[#212529] block sm:hidden">
-          connect
-        </span>
+   
       </button>
 
       <AnimatePresence>
