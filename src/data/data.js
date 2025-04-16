@@ -27,20 +27,28 @@ const platformInfo = [
     gitLink: "https://github.com/S4vad/React_Food_order_app",
     webLink: "https://react-food-order-app-duip.vercel.app/",
   },
-  
+  {
+    title: "Nike Page Clone",
+    description:
+      "A responsive e-commerce UI built with React and Tailwind, featuring add-to-cart and dynamic product selection.",
+    gitLink:
+      "https://github.com/S4vad/Nike_page_using_React_tailwindCss_responsive",
+    webLink:
+      "https://nike-page-using-react-tailwind-css-responsive.vercel.app/",
+  },
+
   {
     title: "Intruder Detection System",
     description:
       "A CNN-based system achieving 94% accuracy in real-time intruder detection from surveillance footage.",
     gitLink: "https://github.com/S4vad/Intruder-detection-using-CNN",
-
   },
   {
     title: "Startup Success Prediction",
     description:
       "A Django-based project leveraging the Adaboost algorithm to predict startup success, helping investors assess risks with 84% accuracy.",
-    gitLink: "https://github.com/S4vad/Startup-success-prediction-End-to-End-using-django",
-
+    gitLink:
+      "https://github.com/S4vad/Startup-success-prediction-End-to-End-using-django",
   },
   {
     title: "Delivery Time Prediction",
@@ -51,5 +59,3 @@ const platformInfo = [
 ];
 
 export default platformInfo;
-
-
