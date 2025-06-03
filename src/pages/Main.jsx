@@ -6,7 +6,7 @@ import ContactForm from "./Contack";
 
 export default function Main() {
   return (
-    <div className="p-5 md:p-10 md:w-[50%] w-full transition-all duration-700 opacity-0 blur-md animate-fade-in">
+    <div className="p-5 md:p-10 md:w-[50%] w-full transition-all duration-700 opacity-0 animate-fade-in">
       <Toaster />
       <div className="flex flex-col gap-2 w-full min-[1800px]:w-[65%]">
         <div className="flex justify-between ">
@@ -14,7 +14,7 @@ export default function Main() {
             <div>
               <img
                 className="rounded-full w-[80px] h-[80px]  md:w-[90px] md:h-[90px] object-cover"
-                src="/crop profile highmb.png"
+                src="/profile.jpg"
                 alt="Profile"
               />
             </div>
@@ -63,7 +63,7 @@ export default function Main() {
             various projects to improve efficiency and productivity.
           </p>
           <p className="dark:text-neutral-400 text-gray-500">
-            I wrote my first line of code in 2022. During my college years, I
+            I wrote my first line of code in 2021. During my college years, I
             gained experience through internships, freelance projects, and by
             attending and organizing developer events. In 2022, I graduated with
             a degree in computer science from India. Currently, I'm pursuing my

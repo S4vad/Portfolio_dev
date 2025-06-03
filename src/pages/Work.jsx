@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data/data";
+import { motion } from "framer-motion";
 
 export default function Work() {
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  const showMore = () => {
+    setVisibleCount((prev) => prev + 4);
+  };
   return (
     <div className="p-5 md:p-10  md:w-[50%] w-full transition-all duration-700 opacity-0 blur-md animate-fade-in">
       <div className="flex flex-col gap-3">
-        {data.map((item, index) => (
-          <div key={index} className="flex flex-col gap-4 leading-relaxed">
+        {data.slice(0, visibleCount).map((item, index) => (
+          <motion.div
+            key={index}
+            className="flex flex-col gap-4 leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
             <div className="flex flex-col gap-2 md:w-3/4">
               <h3 className="text-[15px] text-[#212529] dark:text-white">
                 {item.title}
@@ -70,9 +82,34 @@ export default function Work() {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
+
+      {/*show more button*/}
+      {visibleCount < data.length && (
+        <div className="md:w-3/4 flex justify-end mt-5">
+          <button
+            onClick={showMore}
+            className="flex items-center gap-2  text-[#82b817] hover:text-[#a3d42a] text-sm"
+          >
+            Show More
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
