@@ -88,7 +88,7 @@ export default function Work() {
 
       {/*show more button*/}
       {visibleCount < data.length && (
-        <div className="md:w-3/4 flex justify-end mt-5">
+        <div className="md:w-3/4 flex justify-end">
           <button
             onClick={showMore}
             className="flex items-center gap-2  text-[#82b817] hover:text-[#a3d42a] text-sm"
