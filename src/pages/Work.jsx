@@ -7,7 +7,7 @@ export default function Work() {
 
   return (
     <div className=" my-2  transition-all duration-700 opacity-0 blur-md animate-fade-in">
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {platformInfo.map((item, index) => (
           <motion.div
             key={index}
