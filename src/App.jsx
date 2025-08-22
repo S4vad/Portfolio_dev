@@ -1,37 +1,27 @@
-import { Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import Work from "./pages/Work";
-import Nav from "./pages/Nav";
-import Blog from "./pages/Blog";
-import Blog1 from "./pages/Blog1";
-import Blog2 from "./pages/Blog2";
-import Blog3 from "./pages/Blog3";
+import Svg from "./pages/Svg";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="dark:bg-[#18181b] bg-[#F8F9FA] w-full min-h-screen items-stretch flex flex-col md:flex-row m-0">
-      <div className="p-5 md:p-10 ">
-        <Nav />
-      </div>
+    <div className="bg-[#18181b] w-full min-h-screen  ">
+      <div className="min-h-screen max-w-3xl mx-auto ">
+        <Main />
+        <div class="w-full flex items-center my-6">
+          <div class=" border-t border-gray-800 w-4"></div>
+          <span class="mx-4 text-gray-300">Work Highlights</span>
+          <div class="flex-grow border-t border-gray-800"></div>
+        </div>
 
-      <div
-        className="w-full h-[1px] md:h-full md:w-[1px] 
-         bg-gradient-to-r md:bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-950 
-       from-neutral-200 to-neutral-400"
-      ></div>
-
-      <div className="min-h-screen w-full overflow-auto ">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/1" element={<Blog1 />} />
-          <Route path="/blog/2" element={<Blog2 />} />
-          <Route path="/blog/3" element={<Blog3 />} />
-
-        </Routes>
+        <Work />
+          <div class="w-full flex items-center my-6">
+          <div class=" border-t border-gray-800 w-4"></div>
+          <span class="mx-4 text-gray-300">Skills</span>
+          <div class="flex-grow border-t border-gray-800"></div>
+        </div>
+        <Svg />
       </div>
     </div>
   );

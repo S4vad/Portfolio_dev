@@ -1,17 +1,14 @@
-import React, { useState } from "react";
-import data from "../data/data";
+import platformInfo from "@/data/data";
 import { motion } from "framer-motion";
 
 export default function Work() {
-  const [visibleCount, setVisibleCount] = useState(4);
 
-  const showMore = () => {
-    setVisibleCount((prev) => prev + 4);
-  };
+
+
   return (
-    <div className="p-5 md:p-10  md:w-[50%] w-full transition-all duration-700 opacity-0 blur-md animate-fade-in">
-      <div className="flex flex-col gap-3">
-        {data.slice(0, visibleCount).map((item, index) => (
+    <div className=" my-2  transition-all duration-700 opacity-0 blur-md animate-fade-in">
+      <div className="grid grid-cols-2 gap-5">
+        {platformInfo.map((item, index) => (
           <motion.div
             key={index}
             className="flex flex-col gap-4 leading-relaxed"
@@ -19,18 +16,18 @@ export default function Work() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <div className="flex flex-col gap-2 md:w-3/4">
-              <h3 className="text-[15px] text-[#212529] dark:text-white">
+            <div className="flex flex-col gap-3 ">
+              <h3 className="text-[15px]  text-white">
                 {item.title}
               </h3>
-              <p className="text-[12px] -mt-2 text-neutral-400">
+              <p className="text-sm -mt-2 text-neutral-400">
                 {item.description}
               </p>
               <div className="flex gap-4 items-center text-neutral-300">
                 {/* GitHub Link */}
                 <div className="flex gap-2 items-center">
                   <a
-                    className="border-b text-[#82b817] hover:text-[#a3d42a] inline-flex items-center gap-1 border-[#E0E0E0] dark:border-neutral-800 border-dashed transition-all"
+                    className="border-b text-[#82b817] hover:text-[#a3d42a] inline-flex items-center gap-1  border-neutral-800 border-dashed transition-all"
                     href={item.gitLink}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -54,7 +51,7 @@ export default function Work() {
                 {item.webLink && (
                   <div className="items-center gap-2 flex text-[#82b817] hover:text-[#a3d42a]">
                     <a
-                      className="border-b inline-flex items-center gap-1 dark:border-neutral-800 border-dashed transition-all border-[#E0E0E0]"
+                      className="border-b inline-flex items-center gap-1 border-neutral-800 border-dashed transition-all "
                       href={item.webLink}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -86,30 +83,7 @@ export default function Work() {
         ))}
       </div>
 
-      {/*show more button*/}
-      {visibleCount < data.length && (
-        <div className="md:w-3/4 flex justify-end">
-          <button
-            onClick={showMore}
-            className="flex items-center gap-2  text-[#82b817] hover:text-[#a3d42a] text-sm"
-          >
-            Show More
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-        </div>
-      )}
+
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Svg() {
   return (
     <div class="flex items-center mt-5 gap-3 flex-wrap text-[#212529]">
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300 transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -18,7 +18,7 @@ export default function Svg() {
         </svg>
         <p>Javascript</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -31,9 +31,9 @@ export default function Svg() {
         >
           <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"></path>
         </svg>
-        <p >Python</p>
+        <p>Python</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -47,7 +47,7 @@ export default function Svg() {
         </svg>
         <p>React.js</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300 transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -62,7 +62,7 @@ export default function Svg() {
         <p>Next.js</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -79,22 +79,25 @@ export default function Svg() {
         <p>Node.js</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+     
+
+            <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
-          strokeWidth="0"
-          role="img"
-          viewBox="0 0 24 24"
+          stroke-width="0"
           height="18"
           width="18"
+          viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"></path>
+          <title>TensorFlow</title>
+          <path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z" />
         </svg>
-        <p>Express.js</p>
+
+        <p>Tensorflow</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -110,7 +113,7 @@ export default function Svg() {
         <p>MongoDB</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300 transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -127,7 +130,7 @@ export default function Svg() {
         <p>MySQL</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -142,7 +145,7 @@ export default function Svg() {
         </svg>
         <p>Tailwind</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -157,7 +160,7 @@ export default function Svg() {
         </svg>
         <p>Framer Motion</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300 transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -171,24 +174,9 @@ export default function Svg() {
         </svg>
         <p>OpenAI</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
-        <svg
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="0"
-          height="18"
-          width="18"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>TensorFlow</title>
-          <path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z" />
-        </svg>
 
-        <p>Tensorflow</p>
-      </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -205,7 +193,7 @@ export default function Svg() {
         <p>Keras</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -221,7 +209,7 @@ export default function Svg() {
 
         <p>Scikit-learn</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -238,7 +226,7 @@ export default function Svg() {
         <p>OpenCV</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -254,7 +242,7 @@ export default function Svg() {
 
         <p>Pandas</p>
       </div>
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -271,7 +259,7 @@ export default function Svg() {
         <p>Numpy</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -288,7 +276,7 @@ export default function Svg() {
         <p>Machine learning</p>
       </div>
 
-      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full dark:text-white transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -324,6 +312,21 @@ export default function Svg() {
         </svg>
 
         <p>Natural Language Processing</p>
+      </div>
+       <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          role="img"
+          viewBox="0 0 24 24"
+          height="18"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"></path>
+        </svg>
+        <p>Express.js</p>
       </div>
     </div>
   );
