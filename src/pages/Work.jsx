@@ -2,11 +2,8 @@ import platformInfo from "@/data/data";
 import { motion } from "framer-motion";
 
 export default function Work() {
-
-
-
   return (
-    <div className=" my-2  transition-all duration-700 opacity-0 blur-md animate-fade-in">
+    <div className=" my-2 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {platformInfo.map((item, index) => (
           <motion.div
@@ -14,12 +11,10 @@ export default function Work() {
             className="flex flex-col gap-4 leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: 1.3+index * 0.3 }}
           >
             <div className="flex flex-col gap-3 ">
-              <h3 className="text-[15px]  text-white">
-                {item.title}
-              </h3>
+              <h3 className="text-[15px]  text-white">{item.title}</h3>
               <p className="text-sm -mt-2 text-neutral-400">
                 {item.description}
               </p>
@@ -82,8 +77,6 @@ export default function Work() {
           </motion.div>
         ))}
       </div>
-
-
     </div>
   );
 }

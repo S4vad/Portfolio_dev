@@ -2,7 +2,7 @@ import React from "react";
 
 export function LinkPreviewDemo() {
   return (
-    <span className="flex items-center gap-4 text-[14px]">
+    <span className="flex items-center gap-2 text-[14px]">
       <a
         href="https://www.linkedin.com/in/savadk"
         target="_blank"
@@ -29,7 +29,7 @@ export function LinkPreviewDemo() {
         href="https://github.com/S4vad"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-1 text-gray-300 text-xs hover:text-yellow-200  transition-colors"
+        className="flex items-center gap-1 text-gray-300 text-xs hover:text-yellow-200 transition-colors"
       >
         <svg
           stroke="currentColor"
@@ -49,10 +49,10 @@ export function LinkPreviewDemo() {
       <span className="text-gray-600">/</span>
 
       <a
-        href="https://twitter.com/sava__d"
+        href="https://instagram.com/sava__d"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-1 text-gray-300 text-xs hover:text-yellow-200  transition-colors"
+        className="flex items-center gap-1 text-gray-300 text-xs hover:text-yellow-200 transition-colors"
       >
         <svg
           stroke="currentColor"
@@ -63,9 +63,9 @@ export function LinkPreviewDemo() {
           width="14"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325C8.416 2.175 8.796 2.163 12 2.163zm0 1.622c-3.17 0-3.548.012-4.795.07-1.039.048-1.604.218-1.977.415-.498.27-.854.594-1.224 1.224-.197.373-.367.938-.415 1.977-.058 1.247-.07 1.625-.07 4.795s.012 3.548.07 4.795c.048 1.039.218 1.604.415 1.977.27.498.594.854 1.224 1.224.373.197.938.367 1.977.415 1.247.058 1.625.07 4.795.07s3.548-.012 4.795-.07c1.039-.048 1.604-.218 1.977-.415.498-.27.854-.594 1.224-1.224.197-.373.367-.938.415-1.977.058-1.247.07-1.625.07-4.795s-.012-3.548-.07-4.795c-.048-1.039-.218-1.604-.415-1.977-.27-.498-.594-.854-1.224-1.224-.373-.197-.938-.367-1.977-.415-1.247-.058-1.625-.07-4.795-.07zm0 3.905a5.94 5.94 0 110 11.88 5.94 5.94 0 010-11.88zm0 1.622a4.318 4.318 0 100 8.637 4.318 4.318 0 000-8.637zm6.406-2.845a1.44 1.44 0 110 2.881 1.44 1.44 0 010-2.881z" />
         </svg>
-        <span>Twitter</span>
+        <span>Instagram</span>
       </a>
     </span>
   );

@@ -2,17 +2,23 @@ import React from "react";
 import { LinkPreviewDemo } from "./LinkPreview";
 import { Toaster } from "sonner";
 import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Main() {
   return (
-    <div className="pt-8 md:pt-11 mb-2 transition-all duration-700 opacity-0 animate-fade-in">
+    <div className="pt-5 md:pt-8">
       <Toaster />
       <div className="flex flex-col gap-3 w-full min-[1800px]:w-[65%]">
         <div className="flex justify-between ">
-          <div className="flex items-center gap-4">
+          <motion.div
+            initial={{ opacity: 0.5, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-4"
+          >
             <div>
               <img
-                className="rounded-full size-[90px]  md:size-[100px]  object-cover"
+                className="rounded-full size-[65px]  md:size-[100px]  object-cover"
                 src="/profile.png"
                 alt="Profile"
               />
@@ -30,9 +36,14 @@ export default function Main() {
 
               <LinkPreviewDemo />
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col text-justify  text-[14px] leading-loose tracking-wide gap-5">
+        <motion.div
+          initial={{ opacity: 0.5, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col text-justify  text-[14px] leading-loose tracking-wide gap-5"
+        >
           <p className="text-neutral-400">
             I'm a developer based in India. My interests lie around GenAI, web
             development, and solving actual problems using code. I wrote my
@@ -40,14 +51,12 @@ export default function Main() {
             working as a freelance web developer. <span> </span>
             <a
               href="https://drive.google.com/file/d/1jLgQ-8uITiOJILSsu2ULCabp-BJowfLw/view?usp=drive_link"
-              className=" hover:scale-105 transform  
-           hover:text-yellow-200
-         text-[#FFFFFF] "
+              className="inline-block hover:scale-102 transition-all hover:text-yellow-200 text-[#FFFFFF]"
             >
               <span className="text-[15px]">See my Resume</span>
             </a>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

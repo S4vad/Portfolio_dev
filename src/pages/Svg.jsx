@@ -1,8 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 export default function Svg() {
+  const isMediumUp = useMediaQuery("(min-width: 768px)");
   return (
-    <div class="flex items-center mt-5 gap-3 flex-wrap text-[#212529]">
+    <motion.div
+      initial={{ opacity: 0, x: isMediumUp ? 85 : 20}}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.9 ,delay:0.2}}
+      class="flex items-center gap-3 flex-wrap text-[#212529] pb-10"
+    >
       <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300 transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
@@ -79,9 +87,7 @@ export default function Svg() {
         <p>Node.js</p>
       </div>
 
-     
-
-            <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -174,7 +180,6 @@ export default function Svg() {
         </svg>
         <p>OpenAI</p>
       </div>
-
 
       <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
@@ -313,7 +318,7 @@ export default function Svg() {
 
         <p>Natural Language Processing</p>
       </div>
-       <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
+      <div class="flex items-center text-sm hover:scale-[1.05] rounded-full text-gray-300  transition-all cursor-pointer gap-2 px-3 py-1 border border-neutral-600">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -328,6 +333,6 @@ export default function Svg() {
         </svg>
         <p>Express.js</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
