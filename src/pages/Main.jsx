@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Main() {
   return (
-    <div className="pt-5 md:pt-8">
+    <div className="pt-6.5 md:pt-8">
       <Toaster />
       <div className="flex flex-col gap-3 w-full min-[1800px]:w-[65%]">
         <div className="flex justify-between ">
@@ -50,7 +50,7 @@ export default function Main() {
             first line of code in 2021. Currently, I'm pursuing my MCA while
             working as a freelance web developer. <span> </span>
             <a
-              href="https://drive.google.com/file/d/1jLgQ-8uITiOJILSsu2ULCabp-BJowfLw/view?usp=drive_link"
+              href={import.meta.env.VITE_RESUME_LINK}
               className="inline-block hover:scale-102 transition-all hover:text-yellow-200 text-[#FFFFFF]"
             >
               <span className="text-[15px]">See my Resume</span>
