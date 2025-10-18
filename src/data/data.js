@@ -17,7 +17,7 @@ const platformInfo = [
     title: "Bizfluence",
     description:
       "A platform where businessmen can connect with influencers to grow their business, and influencers can find opportunities to earn money through marketing.",
-    gitLink: "https://github.com/S4vad/BizFlunece",
+    gitLink: "https://github.com/S4vad",
     webLink: "https://biz-flunece.vercel.app",
   },
   {
