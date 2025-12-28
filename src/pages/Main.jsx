@@ -23,18 +23,19 @@ export default function Main() {
                 alt="Profile"
               />
             </div>
-
-            <div className="flex flex-col justify-center gap-1.5">
-              <h1 className="text-white text-[22px] md:text-[24px] font-medium leading-tight">
+            <div className="flex flex-col justify-center gap-1 sm:gap-1.5">
+              <h1 className="text-white text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-medium leading-tight">
                 Hey, I'm Savad
               </h1>
 
-              <div className="flex items-center gap-1 text-gray-400 text-[14px]">
-                <MapPin size={14} className="text-gray-500" />
+              <div className="flex items-center gap-1 text-gray-400 text-[12px] sm:text-[13px] md:text-[14px]">
+                <MapPin className="text-gray-500 sm:size-[13px] md:size-[14px]" />
                 <span>Kerala, India</span>
               </div>
 
-              <LinkPreviewDemo />
+              <div className="text-[12px] sm:text-[13px] md:text-[14px]">
+                <LinkPreviewDemo />
+              </div>
             </div>
           </motion.div>
         </div>
@@ -45,10 +46,10 @@ export default function Main() {
           className="flex flex-col text-justify  text-[14px] leading-loose tracking-wide gap-5"
         >
           <p className="text-neutral-400">
-            I'm a developer based in India. My interests lie around GenAI, web
-            development, and solving actual problems using code. I wrote my
+            I'm a software engineer based in India. My interests lie around AI,
+            web development, and solving actual problems using code. I wrote my
             first line of code in 2021. Currently, I'm pursuing my MCA while
-            working as a freelance web developer. <span> </span>
+            working as a developer. <span> </span>
             <a
               href={import.meta.env.VITE_RESUME_LINK}
               className="inline-block hover:scale-102 transition-all hover:text-yellow-200 text-[#FFFFFF]"
